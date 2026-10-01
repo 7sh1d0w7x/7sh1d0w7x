@@ -40,7 +40,7 @@
 
 ```text
 ┌────────────────────────────────────────────┐
-│       49+ checks          600+ tests       │
+│       49 checks          700+ tests       │
 │   0–100 health        CLI / Web / Tauri    │
 │      read-only           multi-distro      │
 └────────────────────────────────────────────┘
