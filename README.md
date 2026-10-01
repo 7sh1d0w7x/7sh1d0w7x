@@ -11,10 +11,10 @@
 ╚════════════════════════════════════════════╝
 ```
 
-[![GitHub](https://img.shields.io/badge/GitHub-zShaD0w7x-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zShaD0w7x)
-[![Open Source](https://img.shields.io/badge/Open%20Source-GPL--3.0-3fb950?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://github.com/zShaD0w7x/linux-doctor)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/zShaD0w7x/linux-doctor)
-[![Cybersecurity](https://img.shields.io/badge/Cybersecurity-f85149?style=for-the-badge&logo=hackthebox&logoColor=white)](https://github.com/zShaD0w7x)
+[![GitHub](https://img.shields.io/badge/GitHub-7sh1d0w7x-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7sh1d0w7x)
+[![Open Source](https://img.shields.io/badge/Open%20Source-GPL--3.0-3fb950?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](https://github.com/7sh1d0w7x/linux-doctor)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/7sh1d0w7x/linux-doctor)
+[![Cybersecurity](https://img.shields.io/badge/Cybersecurity-f85149?style=for-the-badge&logo=hackthebox&logoColor=white)](https://github.com/7sh1d0w7x)
 
 </div>
 
@@ -24,7 +24,7 @@
 ┌────────────────────────────────────────────┐
 │ SYSTEM                                     │
 │                                            │
-│ USER      zShaD0w7x                        │
+│ USER      7sh1d0w7x                        │
 │ ROLE      Freelance Software & Systems     │
 │ BASE      Timișoara, Romania               │
 │ FOCUS     Linux / Security / Tooling / AI  │
@@ -46,7 +46,7 @@
 └────────────────────────────────────────────┘
 ```
 
-[![Explore linux-doctor](https://img.shields.io/badge/EXPLORE-linux--doctor-3fb950?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/zShaD0w7x/linux-doctor)
+[![Explore linux-doctor](https://img.shields.io/badge/EXPLORE-linux--doctor-3fb950?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/7sh1d0w7x/linux-doctor)
 
 *Read-only diagnostics. One engine — CLI, Web and Desktop.*
 
@@ -76,7 +76,7 @@
 
 | Project | Purpose | Status |
 | --- | --- | --- |
-| 🩺 **[linux-doctor](https://github.com/zShaD0w7x/linux-doctor)** | Linux diagnostics & system health | Active — flagship |
+| 🩺 **[linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)** | Linux diagnostics & system health | Active — flagship |
 | 🔐 **Security tooling** | Experiments around system security | In progress |
 | ⚙️ **Developer tooling** | Automation, utilities & workflows | In progress |
 
@@ -86,11 +86,11 @@ More projects are gradually moving from experiments → usable software.
 
 ### 📊 GITHUB ANALYTICS
 
-[![streak](https://streak-stats.demolab.com?user=zShaD0w7x&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=3FB950&fire=F85149&currStreakLabel=3FB950)](https://github.com/zShaD0w7x)
+[![streak](https://streak-stats.demolab.com?user=7sh1d0w7x&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=30363D&ring=3FB950&fire=F85149&currStreakLabel=3FB950)](https://github.com/7sh1d0w7x)
 
-[![followers](https://img.shields.io/github/followers/zShaD0w7x?style=for-the-badge&label=followers&labelColor=0D1117&color=2F81F7)](https://github.com/zShaD0w7x?tab=followers)
-[![commits/mo](https://img.shields.io/github/commit-activity/m/zShaD0w7x/linux-doctor?style=for-the-badge&label=commits%2Fmo&labelColor=0D1117&color=3FB950)](https://github.com/zShaD0w7x/linux-doctor)
-[![views](https://komarev.com/ghpvc/?username=zShaD0w7x&style=for-the-badge&label=PROFILE+VIEWS&labelColor=0D1117&color=A371F7)](https://github.com/zShaD0w7x)
+[![followers](https://img.shields.io/github/followers/7sh1d0w7x?style=for-the-badge&label=followers&labelColor=0D1117&color=2F81F7)](https://github.com/7sh1d0w7x?tab=followers)
+[![commits/mo](https://img.shields.io/github/commit-activity/m/7sh1d0w7x/linux-doctor?style=for-the-badge&label=commits%2Fmo&labelColor=0D1117&color=3FB950)](https://github.com/7sh1d0w7x/linux-doctor)
+[![views](https://komarev.com/ghpvc/?username=7sh1d0w7x&style=for-the-badge&label=PROFILE+VIEWS&labelColor=0D1117&color=A371F7)](https://github.com/7sh1d0w7x)
 
 ↓
 
@@ -110,8 +110,8 @@ More projects are gradually moving from experiments → usable software.
 
 ### 🐍 CONTRIBUTIONS
 
-![snake dark](https://raw.githubusercontent.com/zShaD0w7x/zShaD0w7x/output/github-snake-dark.svg#gh-dark-mode-only)
-![snake light](https://raw.githubusercontent.com/zShaD0w7x/zShaD0w7x/output/github-snake.svg#gh-light-mode-only)
+![snake dark](https://raw.githubusercontent.com/7sh1d0w7x/7sh1d0w7x/output/github-snake-dark.svg#gh-dark-mode-only)
+![snake light](https://raw.githubusercontent.com/7sh1d0w7x/7sh1d0w7x/output/github-snake.svg#gh-light-mode-only)
 
 ↓
 
@@ -129,15 +129,15 @@ More projects are gradually moving from experiments → usable software.
 
 ### 📡 ACTIVITY
 
-[![last commit](https://img.shields.io/github/last-commit/zShaD0w7x/linux-doctor?style=for-the-badge&label=last%20commit&labelColor=0D1117&color=2F81F7)](https://github.com/zShaD0w7x/linux-doctor)
-[![release](https://img.shields.io/github/v/release/zShaD0w7x/linux-doctor?style=for-the-badge&labelColor=0D1117&color=3FB950)](https://github.com/zShaD0w7x/linux-doctor/releases)
-[![license](https://img.shields.io/github/license/zShaD0w7x/linux-doctor?style=for-the-badge&labelColor=0D1117&color=D29922)](https://github.com/zShaD0w7x/linux-doctor)
+[![last commit](https://img.shields.io/github/last-commit/7sh1d0w7x/linux-doctor?style=for-the-badge&label=last%20commit&labelColor=0D1117&color=2F81F7)](https://github.com/7sh1d0w7x/linux-doctor)
+[![release](https://img.shields.io/github/v/release/7sh1d0w7x/linux-doctor?style=for-the-badge&labelColor=0D1117&color=3FB950)](https://github.com/7sh1d0w7x/linux-doctor/releases)
+[![license](https://img.shields.io/github/license/7sh1d0w7x/linux-doctor?style=for-the-badge&labelColor=0D1117&color=D29922)](https://github.com/7sh1d0w7x/linux-doctor)
 
 ↓
 
 ### 🌐 LINKS
 
-**GitHub** → [@zShaD0w7x](https://github.com/zShaD0w7x) · **Flagship** → [linux-doctor](https://github.com/zShaD0w7x/linux-doctor)
+**GitHub** → [@7sh1d0w7x](https://github.com/7sh1d0w7x) · **Flagship** → [linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)
 
 Open to open-source collaborations, Linux tooling, automation and security work.
 
