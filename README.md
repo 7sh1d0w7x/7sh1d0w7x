@@ -39,6 +39,13 @@ into something you can actually run.
 
 ↓
 
+### 🔧 Open source
+
+**[state-witness](https://github.com/7sh1d0w7x/state-witness)** — effective-state security auditor for immutable Linux (Rust, single binary)
+**[linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)** — read-only health checks for your Linux system
+
+↓
+
 ### 🔐 What I do (freelance, async)
 
 ```text
