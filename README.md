@@ -39,6 +39,22 @@ into something you can actually run.
 
 ↓
 
+### 🔐 What I do (freelance, async)
+
+```text
+   SOVEREIGN STACK
+     1. Secure self-hosted    — Linux hardening, n8n, backups (EU/GDPR)
+     2. AI / MCP security     — lock down agents & MCP servers
+     3. Auditable AI          — provenance, audit trail, evals
+```
+
+↓
+
+**Services** → [7sh1d0w7x.github.io](https://7sh1d0w7x.github.io)
+**Open for freelance** — secure self-hosting + AI/MCP security (async, no calls).
+
+↓
+
 **GitHub** → [@7sh1d0w7x](https://github.com/7sh1d0w7x)
 
 Open to open-source collaborations around Linux tooling, automation and security.
