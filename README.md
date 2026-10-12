@@ -3,7 +3,7 @@
 ```text
 ╔════════════════════════════════════════════╗
 ║                 7sh1d0w7x                  ║
-║      LINUX · SYSTEMS · SECURITY · AI       ║
+║    LINUX · SECURITY · SELF-HOSTED · AI     ║
 ║    I build tools that investigate reality  ║
 ╚════════════════════════════════════════════╝
 ```
@@ -16,15 +16,15 @@ into something you can actually run.
 
 ### 🧰 Languages & tools
 
-<img src="https://skillicons.dev/icons?i=js,rust,html,css,bash,nodejs,tauri,linux,git" alt="JavaScript, Rust, HTML, CSS, Bash, Node.js, Tauri, Linux, Git">
+<img src="https://skillicons.dev/icons?i=rust,python,bash,docker,postgres,caddy,nginx,linux,git,githubactions,js,ts" alt="Rust, Python, Bash, Docker, PostgreSQL, Caddy, Nginx, Linux, Git, GitHub Actions, JavaScript, TypeScript">
 
 ↓
 
 ### 🔭 What I work on
 
 ```text
-   Linux internals      system security      automation
-   CLI tooling          packaging            AI-assisted tools
+   Linux internals      system security      self-hosted automation
+   CLI tooling          AI / MCP security    auditable AI
 ```
 
 ↓
@@ -61,12 +61,13 @@ Writing: **[I poisoned my own MCP server](https://7sh1d0w7x.github.io/blog/tool-
 ↓
 
 **Services** → [7sh1d0w7x.github.io](https://7sh1d0w7x.github.io)
+**Contact** → zshadowdev@duck.com
 **Open for freelance** — secure self-hosting + AI/MCP security (async, no calls).
 
 ↓
 
 **GitHub** → [@7sh1d0w7x](https://github.com/7sh1d0w7x)
 
-Open to open-source collaborations around Linux tooling, automation and security.
+Open to open-source collaborations around Linux tooling, automation, security and AI.
 
 </div>
