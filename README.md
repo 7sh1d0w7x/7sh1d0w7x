@@ -42,10 +42,11 @@ into something you can actually run.
 ### 🔧 Open source
 
 **[state-witness](https://github.com/7sh1d0w7x/state-witness)** — effective-state security auditor for immutable Linux (Rust, single binary)
-**[linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)** — read-only health checks for your Linux system
+**[linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)** — read-only Linux health checks that explain each finding and remember what changed (Node + Tauri app, 14★)
 **[mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner)** — flags poisoned MCP tool descriptions before an agent reads them (Python)
 
 Writing: **[I poisoned my own MCP server](https://7sh1d0w7x.github.io/blog/tool-poisoning-by-hand.html)** — hands-on tool poisoning, real client output, and the scanner that catches it
+**[Linux Doctor, heal thyself: 20 ways my Linux health checker was wrong](https://dev.to/7sh1d0w7x/linux-doctor-heal-thyself-20-ways-my-linux-health-checker-was-wrong-1b2a)** — building a diagnostic tool in public
 
 ↓
 
