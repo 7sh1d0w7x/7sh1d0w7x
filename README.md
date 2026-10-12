@@ -16,7 +16,7 @@ into something you can actually run.
 
 ### 🧰 Languages & tools
 
-<img src="https://skillicons.dev/icons?i=rust,python,bash,docker,postgres,caddy,nginx,linux,git,githubactions,js,ts" alt="Rust, Python, Bash, Docker, PostgreSQL, Caddy, Nginx, Linux, Git, GitHub Actions, JavaScript, TypeScript">
+<img src="https://skillicons.dev/icons?i=rust,python,bash,docker,postgres,ubuntu,nginx,linux,git,githubactions,js,ts" alt="Rust, Python, Bash, Docker, PostgreSQL, Ubuntu, Nginx, Linux, Git, GitHub Actions, JavaScript, TypeScript">
 
 ↓
 
