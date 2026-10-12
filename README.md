@@ -43,6 +43,9 @@ into something you can actually run.
 
 **[state-witness](https://github.com/7sh1d0w7x/state-witness)** — effective-state security auditor for immutable Linux (Rust, single binary)
 **[linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)** — read-only health checks for your Linux system
+**[mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner)** — flags poisoned MCP tool descriptions before an agent reads them (Python)
+
+Writing: **[I poisoned my own MCP server](https://7sh1d0w7x.github.io/blog/tool-poisoning-by-hand.html)** — hands-on tool poisoning, real client output, and the scanner that catches it
 
 ↓
 
