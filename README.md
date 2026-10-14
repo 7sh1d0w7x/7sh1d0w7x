@@ -9,6 +9,7 @@
 ```
 
 Linux internals, security and tooling. Freelance, Timișoara, Romania.
+*(the handle reads “seven-shadow-ex”)*
 I like finding out *why* a machine behaves the way it does — then turning that
 into something you can actually run.
 
