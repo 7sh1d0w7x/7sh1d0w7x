@@ -2,7 +2,7 @@
 
 I build Linux diagnostics and security tooling, and I use it on real hosts.
 
-Freelance, Timișoara, Romania. The handle reads **seven-shadow-ex**. I work async,
+Freelance, Timișoara, Romania. The handle reads **seven-shadow-sevenx**. I work async,
 in writing, without calls.
 
 Most of my work answers one question: **what is this machine actually doing right
