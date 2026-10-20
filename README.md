@@ -90,8 +90,10 @@ that states limits as well as capabilities.
 
 - **Evidence over assertion.** Reproduce the problem before fixing it; every claim is tied
   to a command or a test.
-- **Read-only first.** Diagnosis does not change the system. Changes are scoped in writing,
-  agreed before they happen, and reversible.
+- **Read-only first.** Diagnosis does not change the system. Before any change we assess its
+  impact, agree the rollback step in writing, and state the limit: some changes revert
+  cleanly, some depend on the snapshot taken beforehand, and some cannot be reversed at all.
+  Where that is the case, it is said before the change, not after.
 - **AI drafts, the human owns.** AI assistance is disclosed in the projects; I can explain
   every design and code decision.
 
