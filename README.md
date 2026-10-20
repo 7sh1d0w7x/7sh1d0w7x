@@ -26,9 +26,15 @@ finding names the command that reproduces it.
 
 ## What I do
 
-**Server hardening.** A read-only audit of one Linux server — effective SSH configuration,
-firewall, accounts and sudo, kernel parameters, exposed services, TLS — delivered as a
-report ordered by severity, with a verification re-run after you apply the fixes.
+**Server Health Check.** An assessment of one Linux server with no configuration changes:
+what is exposed, what matters, and what to fix first — a prioritized report with the evidence
+behind each finding. Implementing the fixes is not included.
+
+**Server Hardening.** An initial assessment, then the changes agreed in writing — SSH,
+firewall, accounts and sudo, kernel parameters, updates — each one verified before the next,
+followed by a before/after report with the evidence and the rollback step for each change.
+Full reversal depends on the snapshot taken before the work and on what the change touched;
+where a clean rollback is not possible, the report says so before the change is applied.
 
 **Self-hosted automation.** n8n on your own server (Docker, Postgres, TLS), on a host that
 has been hardened first, with backups and a documented handover.
