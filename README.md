@@ -43,6 +43,13 @@ has been hardened first, with backups and a documented handover.
 can steer it, and which read tools pair with write or egress tools. Written findings, with
 a scanner you can re-run.
 
+| Service | Public evidence | What you receive |
+|---|---|---|
+| **Server Health Check** | [linux-doctor](https://github.com/7sh1d0w7x/linux-doctor) · [state-witness](https://github.com/7sh1d0w7x/state-witness) | A prioritized report with the evidence behind each finding. No configuration changes. |
+| **Server Hardening** | [worked lab report](https://7sh1d0w7x.github.io/blog/hardening-report-example.html) · [state-witness](https://github.com/7sh1d0w7x/state-witness) | Agreed changes, verification after each one, a before/after report with evidence, and rollback steps. |
+| **Self-hosted automation** | [n8n lab summary](https://7sh1d0w7x.github.io/work.html) | A running n8n instance and the agreed workflows, operating docs, backup and a restore procedure. |
+| **AI / MCP security review** | [poisoning lab](https://7sh1d0w7x.github.io/blog/tool-poisoning-by-hand.html) · [mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner) | Findings with their limits, priorities, and verification steps for each fix. |
+
 Each service lists what it includes, what it excludes, and what you receive before any
 work starts. Prices and current availability are on the site.
 
