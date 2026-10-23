@@ -80,6 +80,9 @@ documented list of false positives and false negatives. A review aid, not a guar
   detect it. The scanner came out of this lab.
 - [Linux Doctor, heal thyself: 20 ways my Linux health checker was wrong](https://dev.to/7sh1d0w7x/linux-doctor-heal-thyself-20-ways-my-linux-health-checker-was-wrong-1b2a)
   — building a diagnostic tool in public, mistakes included.
+- [No space left on device, with 56 MB free](https://github.com/7sh1d0w7x/linux-doctor/blob/main/docs/case-studies/inode-exhaustion.md)
+  — a lab case study: reproduce inode exhaustion on a throwaway filesystem, read what Linux
+  Doctor reports, confirm the cause by hand, and verify the fix. A lab, not an incident.
 
 The repositories carry the rest: tests next to the behaviour they protect, and documentation
 that states limits as well as capabilities.
@@ -94,8 +97,8 @@ that states limits as well as capabilities.
   impact, agree the rollback step in writing, and state the limit: some changes revert
   cleanly, some depend on the snapshot taken beforehand, and some cannot be reversed at all.
   Where that is the case, it is said before the change, not after.
-- **AI drafts, the human owns.** AI assistance is disclosed in the projects; I can explain
-  every design and code decision.
+- **AI-assisted work, with explicit verification.** AI assistance is used in these projects;
+  the repositories document verification steps, known limitations, and what remains unverified.
 
 ---
 
