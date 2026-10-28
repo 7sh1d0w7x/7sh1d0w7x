@@ -63,7 +63,9 @@ run. CLI, web dashboard and desktop app share the same checks.
 
 **[state-witness](https://github.com/7sh1d0w7x/state-witness)** — a Rust auditor for the
 state a Linux host actually enforces: SSH, firewall, users and sudo, kernel parameters,
-and ostree/bootc deployment facts. v0.1.0 — the project README lists exactly what is shipped.
+and ostree/bootc deployment facts. The project README tracks what is currently shipped.
+
+The lab runs behind it are public — [runbooks with their evidence](https://github.com/7sh1d0w7x/state-witness/tree/main/docs/runbooks) and [a worked case study](https://github.com/7sh1d0w7x/state-witness/blob/main/docs/case-studies/2026-10-27-four-doors-to-root.md) — both on a disposable VM rather than a client environment.
 
 **[mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner)** — a heuristic scanner
 for tool descriptions that carry hidden instructions, with catalog validation and a
