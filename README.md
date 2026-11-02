@@ -1,106 +1,88 @@
 # Raul B · 7sh1d0w7x
 
-**Linux hardening and self-hosted automation, with a focus on AI/MCP security.**
+**Read-only Linux security tooling: an effective-state auditor, a health checker, and an
+MCP tool scanner.**
 
-I work with small teams and solo developers who run their own Linux server and do not have
-a sysadmin — people who need to know what is actually exposed, what is worth fixing, and
-what it costs to change it safely.
-
-Everything is delivered in writing: a report you can read at your own pace, where each
-finding names the command that reproduces it.
-
-**Async, in writing, no calls.** Timișoara, Romania · the handle reads *seven-shadow-sevenx*.
+I build the tools I use in my own lab, and publish the lab notes with them: SSH,
+firewall, accounts, kernel parameters, immutable/atomic hosts, and the text an AI agent
+is allowed to read. Timișoara, Romania · async, in writing · the handle reads
+*seven-shadow-sevenx*.
 
 ---
 
-## Start here
+## Open source
 
-| | |
-|---|---|
-| **Services and prices** | [7sh1d0w7x.github.io](https://7sh1d0w7x.github.io) |
-| **What a report looks like** | [a worked hardening report](https://7sh1d0w7x.github.io/blog/hardening-report-example.html) |
-| **Contact** | [zshadowdev@duck.com](mailto:zshadowdev@duck.com) |
-| **How it works** | written request → scope agreed → quote → agreed work → verification and handover |
+**[state-witness](https://github.com/7sh1d0w7x/state-witness)** · Rust, single binary, no runtime engine
 
----
+An effective-state auditor for Linux, with dedicated checks for immutable hosts (Fedora
+Atomic, Bazzite, bootc / RHEL Image Mode). 25 checks across SSH, sysctl, firewall, users
+and sudo, plus the deployment itself: image, signature, pin state and `/etc` drift.
+Every finding names the source that produced it (`sshd -T`, `sysctl -n`, the live
+ruleset, the file it was read from), and the README is explicit about what each source
+proves and what it does not. Text and JSON output, meaningful exit codes.
 
-## What I do
+**[linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)** · Node, CLI and desktop app
 
-**Server Health Check.** An assessment of one Linux server with no configuration changes:
-what is exposed, what matters, and what to fix first — a prioritized report with the evidence
-behind each finding. Implementing the fixes is not included.
+Read-only health checks with plain-language explanations, copy-paste fixes, and a diff
+against the previous run. The CLI, the dashboard and the desktop app run the same
+checks. The [latest release](https://github.com/7sh1d0w7x/linux-doctor/releases/latest)
+ships `.deb`, `.rpm` and AppImage builds, each with a detached minisign signature.
 
-**Server Hardening.** An initial assessment, then the changes agreed in writing — SSH,
-firewall, accounts and sudo, kernel parameters, updates — each one verified before the next,
-followed by a before/after report with the evidence and the rollback step for each change.
-Full reversal depends on the snapshot taken before the work and on what the change touched;
-where a clean rollback is not possible, the report says so before the change is applied.
+**[mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner)** · Python, standard library only
 
-**Self-hosted automation.** n8n on your own server (Docker, Postgres, TLS), on a host that
-has been hardened first, with backups and a documented handover.
+Scans an MCP `tools/list` catalog for tool descriptions that carry hidden instructions.
+Exit codes separate "clean", "signal found" and "cannot read the input", so a failed
+scan is never reported as clean. A review aid with a documented list of false positives
+and false negatives, not a guarantee.
 
-**AI / MCP security review.** What an agent or MCP server can reach, where untrusted text
-can steer it, and which read tools pair with write or egress tools. Written findings, with
-a scanner you can re-run.
+## The lab work behind it
 
-| Service | Public evidence | What you receive |
-|---|---|---|
-| **Server Health Check** | [linux-doctor](https://github.com/7sh1d0w7x/linux-doctor) · [state-witness](https://github.com/7sh1d0w7x/state-witness) | A prioritized report with the evidence behind each finding. No configuration changes. |
-| **Server Hardening** | [worked lab report](https://7sh1d0w7x.github.io/blog/hardening-report-example.html) · [state-witness](https://github.com/7sh1d0w7x/state-witness) | Agreed changes, verification after each one, a before/after report with evidence, and rollback steps. |
-| **Self-hosted automation** | [n8n lab summary](https://7sh1d0w7x.github.io/work.html) | A running n8n instance and the agreed workflows, operating docs, backup and a restore procedure. |
-| **AI / MCP security review** | [poisoning lab](https://7sh1d0w7x.github.io/blog/tool-poisoning-by-hand.html) · [mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner) | Findings with their limits, priorities, and verification steps for each fix. |
+The failures are published too. They are the part that teaches something:
 
-Each service lists what it includes, what it excludes, and what you receive before any
-work starts. Prices and current availability are on the site.
-
----
-
-## Selected projects
-
-**[Linux Doctor](https://github.com/7sh1d0w7x/linux-doctor)** — read-only Linux health
-checks with plain-language explanations, copy-paste fixes, and a diff against the previous
-run. CLI, web dashboard and desktop app share the same checks.
-
-**[state-witness](https://github.com/7sh1d0w7x/state-witness)** — a Rust auditor for the
-state a Linux host actually enforces: SSH, firewall, users and sudo, kernel parameters,
-and ostree/bootc deployment facts. The project README tracks what is currently shipped.
-
-The lab runs behind it are public — [runbooks with their evidence](https://github.com/7sh1d0w7x/state-witness/tree/main/docs/runbooks) and [a worked case study](https://github.com/7sh1d0w7x/state-witness/blob/main/docs/case-studies/2026-10-27-four-doors-to-root.md) — both on a disposable VM rather than a client environment.
-
-**[mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner)** — a heuristic scanner
-for tool descriptions that carry hidden instructions, with catalog validation and a
-documented list of false positives and false negatives. A review aid, not a guarantee.
-
----
+- [Four doors to root](https://github.com/7sh1d0w7x/state-witness/blob/main/docs/case-studies/2026-10-27-four-doors-to-root.md): four ways to reach root on a disposable VM, including a sudoers rule that no membership listing shows.
+- [Runbooks with their raw output](https://github.com/7sh1d0w7x/state-witness/tree/main/docs/runbooks): SSH, firewall, sudoers, restic backup and a verified restore, each with the evidence file from the run.
+- [An evidence pack you can check](https://7sh1d0w7x.github.io/evidence.html): checksums, the before/after diff, and the downloadable pack you can verify yourself.
+- [A worked hardening report](https://7sh1d0w7x.github.io/blog/hardening-report-example.html): the shape of the report a client receives.
 
 ## Writing
 
-- [What a hardening report actually looks like](https://7sh1d0w7x.github.io/blog/hardening-report-example.html)
-  — a worked example, including the trap that makes a "hardened" server not hardened.
-- [I poisoned my own MCP server](https://7sh1d0w7x.github.io/blog/tool-poisoning-by-hand.html)
-  — build a server, poison one tool description, capture what the client receives, then
-  detect it. The scanner came out of this lab.
-- [Linux Doctor, heal thyself: 20 ways my Linux health checker was wrong](https://dev.to/7sh1d0w7x/linux-doctor-heal-thyself-20-ways-my-linux-health-checker-was-wrong-1b2a)
-  — building a diagnostic tool in public, mistakes included.
-- [No space left on device, with 56 MB free](https://github.com/7sh1d0w7x/linux-doctor/blob/main/docs/case-studies/inode-exhaustion.md)
-  — a lab case study: reproduce inode exhaustion on a throwaway filesystem, read what Linux
-  Doctor reports, confirm the cause by hand, and verify the fix. A lab, not an incident.
-
-The repositories carry the rest: tests next to the behaviour they protect, and documentation
-that states limits as well as capabilities.
-
----
+- [What a hardening report actually looks like](https://7sh1d0w7x.github.io/blog/hardening-report-example.html): a worked example, including the trap that makes a "hardened" server not hardened.
+- [I poisoned my own MCP server](https://7sh1d0w7x.github.io/blog/tool-poisoning-by-hand.html): build a server, poison one tool description, capture what the client receives, then detect it. The scanner came out of this lab.
+- [Linux Doctor, heal thyself: 20 ways my Linux health checker was wrong](https://dev.to/7sh1d0w7x/linux-doctor-heal-thyself-20-ways-my-linux-health-checker-was-wrong-1b2a): building a diagnostic tool in public, mistakes included.
+- [No space left on device, with 56 MB free](https://github.com/7sh1d0w7x/linux-doctor/blob/main/docs/case-studies/inode-exhaustion.md): reproduce inode exhaustion on a throwaway filesystem, confirm the cause by hand, verify the fix. A lab, not an incident.
 
 ## How I work
 
-- **Evidence over assertion.** Reproduce the problem before fixing it; every claim is tied
-  to a command or a test.
-- **Read-only first.** Diagnosis does not change the system. Before any change we assess its
-  impact, agree the rollback step in writing, and state the limit: some changes revert
-  cleanly, some depend on the snapshot taken beforehand, and some cannot be reversed at all.
-  Where that is the case, it is said before the change, not after.
-- **AI-assisted work, with explicit verification.** AI assistance is used in these projects;
-  the repositories document verification steps, known limitations, and what remains unverified.
+- **Evidence over assertion.** Reproduce the problem before fixing it. Every claim is tied to a command or a test.
+- **Read-only first.** Diagnosis does not change the system. Before any change I assess its impact and agree the rollback step in writing. Some changes revert cleanly, some depend on a snapshot taken beforehand, and some cannot be reversed at all; where that is the case, it is said before the change, not after.
+- **AI-assisted, with explicit verification.** AI assistance is used in these projects. The repositories document the verification steps, the known limitations, and what remains unverified.
+
+## Contributing and asking
+
+Issues and questions are welcome in all three repositories; linux-doctor also has
+Discussions enabled. Both smaller tools are short enough to audit: about 1,400 lines of
+Rust and about 220 lines of Python, and both list what they do not do.
+
+---
+
+## Work with me
+
+I take a small number of freelance engagements: the same tools and the same standard of
+evidence, on your server instead of my lab. Prices and availability are on [the
+site](https://7sh1d0w7x.github.io). No calls: scope, quote, findings and handover are
+all in writing.
+
+**Server Health Check.** An assessment of one Linux server with no configuration changes: what is exposed, what matters, what to fix first: a prioritized report with the evidence behind each finding. Implementing the fixes is not included. If the audit finds no medium or high severity finding, you do not pay. Evidence: [state-witness](https://github.com/7sh1d0w7x/state-witness), [linux-doctor](https://github.com/7sh1d0w7x/linux-doctor).
+
+**Server Hardening.** The assessment, then the changes agreed in writing (SSH, firewall, accounts and sudo, kernel parameters, updates), each verified before the next, followed by a before/after report with the evidence and the rollback step for every change; where a change cannot be reversed cleanly, the report says so before it is applied. Evidence: [a worked report](https://7sh1d0w7x.github.io/blog/hardening-report-example.html).
+
+**Self-hosted automation.** n8n on your own server (Docker, Postgres, TLS) on a host that has been hardened first, with backups and a documented handover. Evidence: [the n8n lab summary](https://7sh1d0w7x.github.io/work.html).
+
+**AI / MCP security review.** What an agent or an MCP server can reach, where untrusted text can steer it, and which read tools pair with write or egress tools. Written findings, with a scanner you can re-run. Evidence: [the poisoning lab](https://7sh1d0w7x.github.io/blog/tool-poisoning-by-hand.html), [mcp-tool-scanner](https://github.com/7sh1d0w7x/mcp-tool-scanner).
+
+Every service lists what it includes, what it excludes and what you receive before work
+starts. How it works: written request, scope agreed, quote, agreed work, verification
+and handover. Contact: [zshadowdev@duck.com](mailto:zshadowdev@duck.com).
 
 ---
 
@@ -108,7 +90,5 @@ that states limits as well as capabilities.
 
 Rust · Node.js · Python · Bash · Linux (Fedora, Debian) · systemd · Docker / Podman ·
 PostgreSQL · n8n · GitHub Actions
-
----
 
 <sub>Open to collaborations around Linux tooling, security and self-hosting.</sub>
