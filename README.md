@@ -14,10 +14,11 @@ read. Timișoara, Romania · async, in writing · the handle reads *seven-shadow
 **[state-witness](https://github.com/7sh1d0w7x/state-witness)** · Rust, single binary, no runtime engine
 
 An effective-state auditor for Linux, with first-class support for immutable hosts
-(Fedora Atomic, Bazzite, bootc / RHEL Image Mode). 25 checks across SSH, firewall, users,
-sudo and sysctl. Every finding names the source that produced it (`sshd -T`, `sysctl -n`,
-the live ruleset, the file it was read from), and the README is explicit about what each
-source proves and what it does not. Text and JSON output, meaningful exit codes.
+(Fedora Atomic, Bazzite, bootc / RHEL Image Mode). 25 checks across SSH, sysctl, firewall,
+users and sudo, plus the deployment itself: image, signature, pin state and `/etc` drift.
+Every finding names the source that produced it (`sshd -T`, `sysctl -n`, the live ruleset,
+the file it was read from), and the README is explicit about what each source proves and
+what it does not. Text and JSON output, meaningful exit codes.
 
 **[linux-doctor](https://github.com/7sh1d0w7x/linux-doctor)** · Node, CLI and desktop app
 
